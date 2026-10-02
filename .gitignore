@@ -11,3 +11,9 @@ Desktop.ini
 *.njsproj
 *.sln
 *.sw?
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3

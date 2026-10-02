@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us & Principal Message | Govt. Graduate College Hafizabad</title>
+  <meta name="description" content="History, Vision, Mission, Principal Message, and Administrative leadership of Government Graduate College Hafizabad.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            clggreen: {
+              DEFAULT: '#0b4f30',
+              dark: '#073520',
+              deep: '#042114',
+              light: '#116840',
+              50: '#f0fdf4'
+            },
+            clggold: {
+              DEFAULT: '#c59b27',
+              light: '#e6b83b',
+              dark: '#997514',
+              50: '#fefce8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 transition-colors duration-300">
+
+  <!-- ================= TOP INFO BAR ================= -->
+  <div class="bg-clggreen-dark text-slate-200 text-xs py-1.5 px-4 hidden md:block border-b border-emerald-900/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5"><i class="fas fa-phone-alt text-clggold"></i> 0547-521400</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-envelope text-clggold"></i> info@ggchafizabad.edu.pk</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-map-marker-alt text-clggold"></i> Gujranwala Road, Hafizabad</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <span class="text-emerald-300 font-semibold"><i class="fas fa-university mr-1"></i> Affiliated with PU Lahore & BISE Gujranwala</span>
+        <span class="text-gray-400">|</span>
+        <a href="student-portal.html" class="hover:text-clggold transition flex items-center gap-1"><i class="fas fa-user-lock"></i> Student & Staff Portal</a>
+        <button class="theme-toggle-btn text-clggold hover:text-white transition ml-2" title="Toggle Dark/Light Mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER & NAVIGATION ================= -->
+  <header class="header-glass sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <img src="assets/images/logo.svg" alt="Govt. Graduate College Hafizabad Logo" class="w-14 h-14 sm:w-16 sm:h-16 group-hover:scale-105 transition duration-300">
+          <div>
+            <div class="text-xs uppercase font-extrabold tracking-widest text-clggreen dark:text-emerald-400 font-sans">
+              Govt. of the Punjab
+            </div>
+            <h1 class="text-base sm:text-lg md:text-xl font-black text-slate-900 dark:text-white tracking-tight leading-tight">
+              Govt. Graduate College Hafizabad
+            </h1>
+            <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 urdu-font">
+              حکومتی گریجویٹ کالج حافظ آباد • <span class="font-sans text-[11px]">Estd. 1958</span>
+            </p>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 text-sm">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link active">About Us</a>
+          <a href="academics.html" class="nav-link">Academics</a>
+          <a href="faculty.html" class="nav-link">Faculty</a>
+          <a href="admissions.html" class="nav-link">Admissions</a>
+          <a href="facilities.html" class="nav-link">Facilities</a>
+          <a href="notices.html" class="nav-link">Notices</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <button id="quick-search-trigger" class="px-3 py-2 text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg hover:bg-slate-200 transition flex items-center gap-2 border border-slate-200 dark:border-slate-700">
+            <i class="fas fa-search text-clggreen dark:text-clggold"></i>
+            <span>Search</span>
+            <kbd class="hidden md:inline-block bg-white dark:bg-slate-900 border text-[10px] px-1.5 py-0.5 rounded shadow-xs font-mono">Ctrl K</kbd>
+          </button>
+          
+          <a href="admissions.html" class="px-4 py-2 text-xs font-bold bg-clggreen hover:bg-clggreen-dark text-white rounded-lg shadow-md hover:shadow-lg transition duration-200 flex items-center gap-1.5 border border-clggold/40">
+            <i class="fas fa-paper-plane text-clggold"></i>
+            <span>Apply Online</span>
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2 lg:hidden">
+          <button class="theme-toggle-btn p-2 text-slate-700 dark:text-slate-200 hover:text-clggreen">
+            <i class="fas fa-moon text-lg"></i>
+          </button>
+          <button id="mobile-menu-toggle" class="p-2 text-slate-700 dark:text-slate-200 hover:text-clggreen">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-sm lg:hidden">
+      <div class="fixed inset-y-0 right-0 max-w-xs w-full bg-white dark:bg-slate-900 shadow-2xl p-6 flex flex-col justify-between overflow-y-auto">
+        <div>
+          <div class="flex items-center justify-between border-b pb-4 mb-6 dark:border-slate-800">
+            <div class="flex items-center gap-2">
+              <img src="assets/images/logo.svg" alt="Logo" class="w-10 h-10">
+              <span class="font-bold text-sm text-clggreen dark:text-white">GGC Hafizabad</span>
+            </div>
+            <button id="mobile-menu-close" class="text-slate-400 hover:text-slate-700 dark:hover:text-white p-2">
+              <i class="fas fa-times text-xl"></i>
+            </button>
+          </div>
+          <nav class="flex flex-col gap-3 font-semibold text-sm">
+            <a href="index.html" class="p-2 rounded-lg text-slate-700 dark:text-slate-200">Home</a>
+            <a href="about.html" class="p-2 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-clggreen dark:text-emerald-400">About Us</a>
+            <a href="academics.html" class="p-2 rounded-lg text-slate-700 dark:text-slate-200">Academics</a>
+            <a href="faculty.html" class="p-2 rounded-lg text-slate-700 dark:text-slate-200">Faculty</a>
+            <a href="admissions.html" class="p-2 rounded-lg text-slate-700 dark:text-slate-200">Admissions</a>
+            <a href="facilities.html" class="p-2 rounded-lg text-slate-700 dark:text-slate-200">Facilities</a>
+            <a href="notices.html" class="p-2 rounded-lg text-slate-700 dark:text-slate-200">Notices</a>
+            <a href="gallery.html" class="p-2 rounded-lg text-slate-700 dark:text-slate-200">Gallery</a>
+            <a href="student-portal.html" class="p-2 rounded-lg text-slate-700 dark:text-slate-200">Student Portal</a>
+            <a href="contact.html" class="p-2 rounded-lg text-slate-700 dark:text-slate-200">Contact Us</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <div class="bg-gradient-to-r from-clggreen-deep via-clggreen to-clggreen-dark text-white py-14 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <span class="text-xs font-bold uppercase tracking-widest text-clggold-light bg-black/25 px-3 py-1 rounded-full border border-clggold/30">
+        About the Institution
+      </span>
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-black mt-3 mb-2">About Govt. Graduate College Hafizabad</h1>
+      <p class="text-slate-300 text-sm max-w-2xl mx-auto">
+        A legacy of academic brilliance, visionary leadership, and character grooming in the historic city of Hafizabad.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= DETAILED PRINCIPAL'S DESK ================= -->
+  <section class="py-16 bg-white dark:bg-slate-900 border-b dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <div class="lg:col-span-5 text-center">
+          <div class="relative inline-block">
+            <img src="assets/images/principal.svg" alt="Principal Prof Muhammad Inayat Bhatti" class="w-72 h-88 rounded-2xl shadow-2xl border-4 border-emerald-900/20">
+            <div class="absolute -bottom-4 right-4 bg-clggold text-slate-950 font-black text-xs px-3 py-1.5 rounded-lg shadow-lg">
+              Official Portrait
+            </div>
+          </div>
+          <div class="mt-6">
+            <h3 class="text-2xl font-black text-slate-900 dark:text-white">Prof. Muhammad Inayat Bhatti</h3>
+            <p class="text-sm font-bold text-clggreen dark:text-clggold">Principal, Govt. Graduate College Hafizabad</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Professor of Mathematics | M.Sc. (PU), M.Phil (QAU)</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="text-xs font-bold text-clggold uppercase tracking-widest mb-2">Official Communiqué</div>
+          <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-6">Principal's Address to Students & Parents</h2>
+          
+          <div class="prose text-slate-700 dark:text-slate-300 text-sm sm:text-base leading-relaxed space-y-4">
+            <p>
+              It is a matter of profound privilege and honor for me to lead <strong>Government Graduate College Hafizabad</strong>, an institution that has nurtured generations of scholars, civil servants, doctors, engineers, military officers, and patriotic citizens since 1958.
+            </p>
+            <p>
+              Our pedagogical philosophy is grounded in three pillars: <strong>Rigorous Scholarship</strong>, <strong>Unwavering Ethical Integrity</strong>, and <strong>Active Co-curricular Engagement</strong>. We do not just teach textbooks; we instill curiosity, analytical thinking, and civic duty into our students.
+            </p>
+            <p>
+              With the transition to the 4-Year BS Honors program under the auspices of the University of the Punjab, we have upgraded our IT labs with high-speed fiber connectivity, enriched our central library with international journals, and equipped our physical science labs with precision instrumentation.
+            </p>
+            <p class="font-medium text-slate-900 dark:text-white">
+              To our dear students: You are the architects of Pakistan's future. Utilize the resources of this college with diligence, respect your teachers, and always strive to leave a legacy of excellence.
+            </p>
+          </div>
+
+          <div class="mt-8 pt-6 border-t dark:border-slate-800 flex items-center justify-between flex-wrap gap-4">
+            <div>
+              <div class="font-bold text-sm text-clggreen dark:text-emerald-400">Prof. Muhammad Inayat Bhatti</div>
+              <div class="text-xs text-slate-500">Principal Office: 0547-521400</div>
+            </div>
+            <a href="mailto:principal@ggchafizabad.edu.pk" class="px-4 py-2 bg-clggreen text-white text-xs font-bold rounded-lg shadow hover:bg-clggreen-dark transition">
+              <i class="fas fa-envelope mr-1.5"></i> Email Principal's Office
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= VISION & MISSION ================= -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Vision -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm relative overflow-hidden">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-clggreen dark:text-emerald-400 flex items-center justify-center text-xl mb-4">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-3">Our Vision</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            To be recognized as a premier center of higher academic learning in Punjab, fostering transformative education, scientific innovation, critical enquiry, and human values that empower students to lead meaningful and constructive lives in a rapidly evolving global society.
+          </p>
+        </div>
+
+        <!-- Mission -->
+        <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm relative overflow-hidden">
+          <div class="w-12 h-12 rounded-xl bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 flex items-center justify-center text-xl mb-4">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3 class="text-2xl font-black text-slate-900 dark:text-white mb-3">Our Mission</h3>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+            To provide equitable, affordable, and high-standard higher education across Science, Arts, Humanities, and Information Technology; to cultivate ethical values, intellectual integrity, and social responsibility; and to groom youth as capable contributors to national development.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= COLLEGE HISTORY & MILESTONES ================= -->
+  <section class="py-16 bg-white dark:bg-slate-900 border-b dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-clggreen dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/70 px-3 py-1 rounded-full">
+          Historical Evolution
+        </span>
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white mt-3">
+          Six Decades of Academic Heritage
+        </h2>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-8 relative before:absolute before:inset-0 before:left-8 before:w-0.5 before:bg-slate-200 dark:before:bg-slate-800">
+        
+        <!-- Milestone 1 -->
+        <div class="relative flex items-start gap-6 pl-4">
+          <div class="w-8 h-8 rounded-full bg-clggreen text-white flex items-center justify-center text-xs font-bold shrink-0 z-10 shadow">
+            1958
+          </div>
+          <div class="bg-slate-50 dark:bg-slate-800/60 p-5 rounded-2xl border flex-1">
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">Inception of Govt. Degree College Hafizabad</h4>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">
+              Established as an intermediate and bachelor-level college to serve the educational aspirations of the youth of Hafizabad and surrounding rural tehsils.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="relative flex items-start gap-6 pl-4">
+          <div class="w-8 h-8 rounded-full bg-clggreen text-white flex items-center justify-center text-xs font-bold shrink-0 z-10 shadow">
+            1995
+          </div>
+          <div class="bg-slate-50 dark:bg-slate-800/60 p-5 rounded-2xl border flex-1">
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">Expansion of Science & Commerce Wings</h4>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">
+              New dedicated laboratory blocks for Physics, Chemistry, and Zoology were inaugurated alongside full accreditation for I.Com and B.Com degree streams.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="relative flex items-start gap-6 pl-4">
+          <div class="w-8 h-8 rounded-full bg-clggreen text-white flex items-center justify-center text-xs font-bold shrink-0 z-10 shadow">
+            2010
+          </div>
+          <div class="bg-slate-50 dark:bg-slate-800/60 p-5 rounded-2xl border flex-1">
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">Launch of BS (4-Year) Honors Degrees</h4>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">
+              Upgraded to a Post-Graduate / Graduate college with the launch of flagship 4-year undergraduate BS programs affiliated with the University of the Punjab.
+            </p>
+          </div>
+        </div>
+
+        <!-- Milestone 4 -->
+        <div class="relative flex items-start gap-6 pl-4">
+          <div class="w-8 h-8 rounded-full bg-amber-500 text-slate-950 flex items-center justify-center text-xs font-bold shrink-0 z-10 shadow">
+            2026
+          </div>
+          <div class="bg-slate-50 dark:bg-slate-800/60 p-5 rounded-2xl border border-amber-400/40 flex-1">
+            <h4 class="font-bold text-slate-900 dark:text-white text-base">Digital Smart Campus & 14+ BS Disciplines</h4>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mt-1">
+              Today, Govt. Graduate College Hafizabad boasts over 3,800 students, modern AI computing labs, solar-backed energy, and top positions in BISE Gujranwala.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ADMINISTRATION HIERARCHY ================= -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold uppercase tracking-wider text-clggreen dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/70 px-3 py-1 rounded-full">
+          Governance & Leadership
+        </span>
+        <h2 class="text-3xl font-black text-slate-900 dark:text-white mt-3">
+          College Administrative Body
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border text-center">
+          <div class="w-16 h-16 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-xl mx-auto mb-3">
+            P
+          </div>
+          <h4 class="font-bold text-slate-900 dark:text-white text-base">Prof. Muhammad Inayat Bhatti</h4>
+          <p class="text-xs text-clggreen dark:text-clggold font-semibold">Principal</p>
+          <p class="text-[11px] text-slate-500 mt-1">Chief Executive & Head of Institution</p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border text-center">
+          <div class="w-16 h-16 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-xl mx-auto mb-3">
+            VP
+          </div>
+          <h4 class="font-bold text-slate-900 dark:text-white text-base">Prof. Tariq Mahmood Cheema</h4>
+          <p class="text-xs text-clggreen dark:text-clggold font-semibold">Vice Principal</p>
+          <p class="text-[11px] text-slate-500 mt-1">Academic Affairs & Campus Administration</p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border text-center">
+          <div class="w-16 h-16 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-xl mx-auto mb-3">
+            C
+          </div>
+          <h4 class="font-bold text-slate-900 dark:text-white text-base">Prof. Ghulam Mustafa Raza</h4>
+          <p class="text-xs text-clggreen dark:text-clggold font-semibold">Chief Proctor</p>
+          <p class="text-[11px] text-slate-500 mt-1">Student Discipline & Code of Conduct</p>
+        </div>
+
+        <div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border text-center">
+          <div class="w-16 h-16 rounded-full bg-emerald-700 text-white font-bold flex items-center justify-center text-xl mx-auto mb-3">
+            S
+          </div>
+          <h4 class="font-bold text-slate-900 dark:text-white text-base">Prof. Sajid Hussain Shah</h4>
+          <p class="text-xs text-clggreen dark:text-clggold font-semibold">Director Sports</p>
+          <p class="text-[11px] text-slate-500 mt-1">Athletics, Tournaments & Fitness</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-8 border-t-4 border-clggold">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>&copy; 2026 Government Graduate College Hafizabad. All Rights Reserved.</div>
+        <div class="flex items-center gap-4">
+          <a href="index.html" class="hover:text-slate-300">Home</a>
+          <span>•</span>
+          <a href="academics.html" class="hover:text-slate-300">Academics</a>
+          <span>•</span>
+          <a href="contact.html" class="hover:text-slate-300">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn" title="Back to Top"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

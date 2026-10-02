@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student & Faculty Portal | Govt. Graduate College Hafizabad</title>
+  <meta name="description" content="Access online student portal for roll number slips, semester examination results, fee challans, and academic timetables at Govt. Graduate College Hafizabad.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            clggreen: {
+              DEFAULT: '#0b4f30',
+              dark: '#073520',
+              deep: '#042114',
+              light: '#116840',
+              50: '#f0fdf4'
+            },
+            clggold: {
+              DEFAULT: '#c59b27',
+              light: '#e6b83b',
+              dark: '#997514',
+              50: '#fefce8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 transition-colors duration-300">
+
+  <!-- ================= TOP INFO BAR ================= -->
+  <div class="bg-clggreen-dark text-slate-200 text-xs py-1.5 px-4 hidden md:block border-b border-emerald-900/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5"><i class="fas fa-phone-alt text-clggold"></i> 0547-521400</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-envelope text-clggold"></i> info@ggchafizabad.edu.pk</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <a href="student-portal.html" class="text-clggold font-bold transition flex items-center gap-1"><i class="fas fa-user-lock"></i> Student & Staff Portal</a>
+        <button class="theme-toggle-btn text-clggold hover:text-white transition ml-2"><i class="fas fa-moon"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER ================= -->
+  <header class="header-glass sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <img src="assets/images/logo.svg" alt="Logo" class="w-14 h-14 group-hover:scale-105 transition">
+          <div>
+            <div class="text-xs uppercase font-extrabold tracking-widest text-clggreen dark:text-emerald-400">Govt. of the Punjab</div>
+            <h1 class="text-base sm:text-lg md:text-xl font-black text-slate-900 dark:text-white leading-tight">Govt. Graduate College Hafizabad</h1>
+            <p class="text-xs font-semibold text-slate-500 urdu-font">حکومتی گریجویٹ کالج حافظ آباد</p>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 text-sm">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="academics.html" class="nav-link">Academics</a>
+          <a href="faculty.html" class="nav-link">Faculty</a>
+          <a href="admissions.html" class="nav-link">Admissions</a>
+          <a href="facilities.html" class="nav-link">Facilities</a>
+          <a href="notices.html" class="nav-link">Notices</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="admissions.html" class="px-4 py-2 text-xs font-bold bg-clggreen hover:bg-clggreen-dark text-white rounded-lg shadow border border-clggold/40">
+            <i class="fas fa-paper-plane text-clggold mr-1"></i> Apply Online
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2 lg:hidden">
+          <button class="theme-toggle-btn p-2 text-slate-700 dark:text-slate-200"><i class="fas fa-moon"></i></button>
+          <button id="mobile-menu-toggle" class="p-2 text-slate-700 dark:text-slate-200"><i class="fas fa-bars text-2xl"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= BANNER ================= -->
+  <div class="bg-gradient-to-r from-clggreen-deep via-clggreen to-clggreen-dark text-white py-14 px-4 text-center">
+    <span class="text-xs font-bold uppercase tracking-widest text-clggold-light bg-black/25 px-3 py-1 rounded-full border border-clggold/30">
+      Academic Services
+    </span>
+    <h1 class="text-3xl sm:text-5xl font-black mt-3 mb-2">Student & Faculty Portal</h1>
+    <p class="text-slate-300 text-sm max-w-2xl mx-auto">
+      Access digital services: Roll number slips, semester examination results, fee challan duplicate copies, and LMS learning resources.
+    </p>
+  </div>
+
+  <!-- ================= PORTAL MODULES TABS ================= -->
+  <section class="py-16">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Feature Navigation -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+        <button onclick="switchPortalTab('roll-slip', this)" class="portal-tab-btn active p-4 rounded-2xl bg-white dark:bg-slate-900 border text-center hover:shadow-md transition">
+          <i class="fas fa-id-card text-clggreen dark:text-clggold text-2xl mb-1"></i>
+          <div class="text-xs font-bold text-slate-900 dark:text-white">Roll No. Slip</div>
+        </button>
+
+        <button onclick="switchPortalTab('results', this)" class="portal-tab-btn p-4 rounded-2xl bg-white dark:bg-slate-900 border text-center hover:shadow-md transition">
+          <i class="fas fa-poll text-clggreen dark:text-clggold text-2xl mb-1"></i>
+          <div class="text-xs font-bold text-slate-900 dark:text-white">Online Results</div>
+        </button>
+
+        <button onclick="switchPortalTab('timetable', this)" class="portal-tab-btn p-4 rounded-2xl bg-white dark:bg-slate-900 border text-center hover:shadow-md transition">
+          <i class="fas fa-calendar-alt text-clggreen dark:text-clggold text-2xl mb-1"></i>
+          <div class="text-xs font-bold text-slate-900 dark:text-white">Class Timetables</div>
+        </button>
+
+        <button onclick="switchPortalTab('lms-login', this)" class="portal-tab-btn p-4 rounded-2xl bg-white dark:bg-slate-900 border text-center hover:shadow-md transition">
+          <i class="fas fa-lock text-clggreen dark:text-clggold text-2xl mb-1"></i>
+          <div class="text-xs font-bold text-slate-900 dark:text-white">Staff / LMS Login</div>
+        </button>
+      </div>
+
+      <!-- TAB 1: Roll No Slip Finder -->
+      <div id="tab-roll-slip" class="portal-section bg-white dark:bg-slate-900 p-8 rounded-3xl border shadow-sm">
+        <h3 class="text-xl font-black text-slate-900 dark:text-white mb-2">Examination Roll Number Slip Finder</h3>
+        <p class="text-xs text-slate-500 mb-6">Enter your College Roll Number or B-Form/CNIC to generate and print your official examination slip.</p>
+
+        <form id="roll-slip-form" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold mb-1">Registration / Roll No *</label>
+              <input type="text" id="slip-roll" required placeholder="e.g. BSCS-22-45" class="w-full p-3 text-xs rounded-xl border dark:bg-slate-800 dark:border-slate-700">
+            </div>
+            <div>
+              <label class="block text-xs font-bold mb-1">Examination Session *</label>
+              <select id="slip-session" class="w-full p-3 text-xs rounded-xl border dark:bg-slate-800 dark:border-slate-700 font-semibold">
+                <option value="BS Fall 2026 Final Exams">BS Fall 2026 Final Exams (PU Affiliated)</option>
+                <option value="Intermediate 1st Year Annual 2026">Intermediate 1st Year Annual (BISE)</option>
+                <option value="Intermediate 2nd Year Annual 2026">Intermediate 2nd Year Annual (BISE)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="px-6 py-3 bg-clggreen hover:bg-clggreen-dark text-white font-bold text-xs rounded-xl shadow transition">
+            <i class="fas fa-search mr-1.5"></i> Find & Generate Roll Number Slip
+          </button>
+        </form>
+
+        <div id="slip-result" class="hidden mt-8"></div>
+      </div>
+
+      <!-- TAB 2: Online Result Inquiry -->
+      <div id="tab-results" class="portal-section hidden bg-white dark:bg-slate-900 p-8 rounded-3xl border shadow-sm">
+        <h3 class="text-xl font-black text-slate-900 dark:text-white mb-2">Online Semester Result Card</h3>
+        <p class="text-xs text-slate-500 mb-6">Check your semester GPA, subject marks, and grade card online.</p>
+
+        <form id="result-inquiry-form" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold mb-1">College Roll Number *</label>
+              <input type="text" id="result-roll" required placeholder="e.g. BSCS-22-10" class="w-full p-3 text-xs rounded-xl border dark:bg-slate-800 dark:border-slate-700">
+            </div>
+            <div>
+              <label class="block text-xs font-bold mb-1">Semester *</label>
+              <select id="result-semester" class="w-full p-3 text-xs rounded-xl border dark:bg-slate-800 dark:border-slate-700 font-semibold">
+                <option value="4th Semester (Spring 2026)">4th Semester (Spring 2026)</option>
+                <option value="3rd Semester (Fall 2025)">3rd Semester (Fall 2025)</option>
+                <option value="2nd Semester (Spring 2025)">2nd Semester (Spring 2025)</option>
+                <option value="1st Semester (Fall 2024)">1st Semester (Fall 2024)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="px-6 py-3 bg-clggreen hover:bg-clggreen-dark text-white font-bold text-xs rounded-xl shadow transition">
+            <i class="fas fa-chart-bar mr-1.5"></i> View Online Grade Card
+          </button>
+        </form>
+
+        <div id="result-display" class="hidden mt-8"></div>
+      </div>
+
+      <!-- TAB 3: Class Timetables -->
+      <div id="tab-timetable" class="portal-section hidden bg-white dark:bg-slate-900 p-8 rounded-3xl border shadow-sm">
+        <h3 class="text-xl font-black text-slate-900 dark:text-white mb-2">Class Timetables & Schedules</h3>
+        <p class="text-xs text-slate-500 mb-6">Select your department and semester to download the updated lecture routine.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs">
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border flex items-center justify-between">
+            <div>
+              <div class="font-bold text-slate-900 dark:text-white">BS Computer Science</div>
+              <div class="text-slate-500">Semesters 1, 3, 5, 7</div>
+            </div>
+            <button onclick="downloadFakePdf('Timetable - BS Computer Science')" class="text-clggreen hover:underline font-bold"><i class="fas fa-download"></i> PDF</button>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border flex items-center justify-between">
+            <div>
+              <div class="font-bold text-slate-900 dark:text-white">BS English</div>
+              <div class="text-slate-500">Semesters 1, 3, 5, 7</div>
+            </div>
+            <button onclick="downloadFakePdf('Timetable - BS English')" class="text-clggreen hover:underline font-bold"><i class="fas fa-download"></i> PDF</button>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border flex items-center justify-between">
+            <div>
+              <div class="font-bold text-slate-900 dark:text-white">BS Mathematics</div>
+              <div class="text-slate-500">Semesters 1, 3, 5, 7</div>
+            </div>
+            <button onclick="downloadFakePdf('Timetable - BS Mathematics')" class="text-clggreen hover:underline font-bold"><i class="fas fa-download"></i> PDF</button>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border flex items-center justify-between">
+            <div>
+              <div class="font-bold text-slate-900 dark:text-white">F.Sc Pre-Medical</div>
+              <div class="text-slate-500">Part-I & Part-II</div>
+            </div>
+            <button onclick="downloadFakePdf('Timetable - F.Sc Pre-Medical')" class="text-clggreen hover:underline font-bold"><i class="fas fa-download"></i> PDF</button>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border flex items-center justify-between">
+            <div>
+              <div class="font-bold text-slate-900 dark:text-white">ICS (Computer Science)</div>
+              <div class="text-slate-500">Part-I & Part-II</div>
+            </div>
+            <button onclick="downloadFakePdf('Timetable - ICS')" class="text-clggreen hover:underline font-bold"><i class="fas fa-download"></i> PDF</button>
+          </div>
+          <div class="p-4 rounded-xl bg-slate-50 dark:bg-slate-800 border flex items-center justify-between">
+            <div>
+              <div class="font-bold text-slate-900 dark:text-white">BS Physics & Chem</div>
+              <div class="text-slate-500">Semesters 1, 3, 5, 7</div>
+            </div>
+            <button onclick="downloadFakePdf('Timetable - BS Physics & Chem')" class="text-clggreen hover:underline font-bold"><i class="fas fa-download"></i> PDF</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: LMS / Staff Login -->
+      <div id="tab-lms-login" class="portal-section hidden bg-white dark:bg-slate-900 p-8 rounded-3xl border shadow-sm max-w-md mx-auto">
+        <div class="text-center mb-6">
+          <div class="w-12 h-12 rounded-full bg-emerald-100 text-clggreen font-bold flex items-center justify-center text-xl mx-auto mb-2">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h3 class="text-xl font-black text-slate-900 dark:text-white">Faculty & LMS Login</h3>
+          <p class="text-xs text-slate-500">Govt. Higher Education Department Portal</p>
+        </div>
+
+        <form onsubmit="handleFormSubmit(event, 'LMS Portal Authorization'); return false;" class="space-y-4">
+          <div>
+            <label class="block text-xs font-bold mb-1">Username / CNIC *</label>
+            <input type="text" required placeholder="e.g. 34301-XXXXXXX-X" class="w-full p-3 text-xs rounded-xl border dark:bg-slate-800 dark:border-slate-700">
+          </div>
+          <div>
+            <label class="block text-xs font-bold mb-1">Password *</label>
+            <input type="password" required placeholder="••••••••" class="w-full p-3 text-xs rounded-xl border dark:bg-slate-800 dark:border-slate-700">
+          </div>
+          <div class="flex items-center justify-between text-xs">
+            <label class="flex items-center gap-1.5"><input type="checkbox"> Remember me</label>
+            <a href="contact.html" class="text-clggreen hover:underline">Forgot password?</a>
+          </div>
+          <button type="submit" class="w-full py-3 bg-clggreen hover:bg-clggreen-dark text-white font-bold text-xs rounded-xl shadow">
+            Sign In to LMS Portal
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-8 border-t-4 border-clggold">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+      &copy; 2026 Government Graduate College Hafizabad. All Rights Reserved.
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function switchPortalTab(tabId, btn) {
+      document.querySelectorAll('.portal-tab-btn').forEach(b => b.classList.remove('active', 'border-clggreen', 'ring-2', 'ring-clggreen/20'));
+      btn.classList.add('active', 'border-clggreen', 'ring-2', 'ring-clggreen/20');
+
+      document.querySelectorAll('.portal-section').forEach(sec => sec.classList.add('hidden'));
+      document.getElementById(`tab-${tabId}`)?.classList.remove('hidden');
+    }
+
+    // Roll Number Slip Handler
+    document.getElementById('roll-slip-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const roll = document.getElementById('slip-roll').value;
+      const session = document.getElementById('slip-session').value;
+
+      const output = document.getElementById('slip-result');
+      output.innerHTML = `
+        <div class="printable-area border-2 border-emerald-800 p-6 rounded-2xl bg-white text-gray-900 shadow">
+          <div class="flex items-center justify-between border-b pb-4 mb-4">
+            <div class="flex items-center gap-3">
+              <img src="assets/images/logo.svg" class="w-16 h-16">
+              <div>
+                <h4 class="font-black text-sm uppercase text-emerald-950">Govt. Graduate College Hafizabad</h4>
+                <p class="text-xs text-gray-600 font-semibold">Official Examination Roll Number Slip</p>
+                <p class="text-xs text-gray-500">${session}</p>
+              </div>
+            </div>
+            <div class="text-right">
+              <div class="text-xs font-mono font-bold bg-emerald-100 text-emerald-900 px-3 py-1 rounded inline-block">ROLL NO: ${roll}</div>
+              <div class="text-[10px] text-gray-500 mt-1">Status: Regular Candidate</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+            <div><strong>Candidate Name:</strong> Usman Tariq</div>
+            <div><strong>Father's Name:</strong> Tariq Mehmood</div>
+            <div><strong>Registration No:</strong> 2022-GGC-5421</div>
+            <div><strong>Exam Center:</strong> Main Examination Hall, Block-A, GGC Hafizabad</div>
+          </div>
+
+          <table class="w-full text-xs text-left border mb-4">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="p-2 border">Subject / Course</th>
+                <th class="p-2 border">Date</th>
+                <th class="p-2 border">Time</th>
+                <th class="p-2 border">Room #</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="p-2 border font-medium">Design & Analysis of Algorithms</td><td class="p-2 border">20-Oct-2026</td><td class="p-2 border">09:00 AM</td><td class="p-2 border">Hall-1</td></tr>
+              <tr><td class="p-2 border font-medium">Computer Networks & Data Com</td><td class="p-2 border">23-Oct-2026</td><td class="p-2 border">09:00 AM</td><td class="p-2 border">Hall-1</td></tr>
+              <tr><td class="p-2 border font-medium">Software Engineering Principles</td><td class="p-2 border">26-Oct-2026</td><td class="p-2 border">09:00 AM</td><td class="p-2 border">Hall-1</td></tr>
+              <tr><td class="p-2 border font-medium">Numerical Computing</td><td class="p-2 border">29-Oct-2026</td><td class="p-2 border">09:00 AM</td><td class="p-2 border">Hall-1</td></tr>
+            </tbody>
+          </table>
+
+          <div class="flex justify-between items-center pt-4 border-t text-[11px] text-gray-500">
+            <div>Controller of Examinations, GGC Hafizabad</div>
+            <button onclick="window.print()" class="no-print px-4 py-1.5 bg-emerald-800 text-white rounded font-bold text-xs">
+              <i class="fas fa-print mr-1"></i> Print Roll Number Slip
+            </button>
+          </div>
+        </div>
+      `;
+      output.classList.remove('hidden');
+      showToast('Roll number slip generated!', 'success');
+    });
+
+    // Result Inquiry Handler
+    document.getElementById('result-inquiry-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const roll = document.getElementById('result-roll').value;
+      const sem = document.getElementById('result-semester').value;
+
+      const output = document.getElementById('result-display');
+      output.innerHTML = `
+        <div class="printable-area border-2 border-emerald-800 p-6 rounded-2xl bg-white text-gray-900 shadow">
+          <div class="flex items-center justify-between border-b pb-4 mb-4">
+            <div>
+              <h4 class="font-black text-sm uppercase text-emerald-950">Govt. Graduate College Hafizabad</h4>
+              <p class="text-xs text-gray-600 font-semibold">Semester Grade Card & Performance Summary</p>
+              <p class="text-xs text-gray-500">${sem}</p>
+            </div>
+            <div class="text-right">
+              <div class="text-lg font-black text-emerald-800 font-mono">GPA: 3.78</div>
+              <div class="text-xs text-gray-500">CGPA: 3.65 (Distinction)</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 text-xs mb-4">
+            <div><strong>Student:</strong> Hamza Ali (Roll: ${roll})</div>
+            <div><strong>Program:</strong> BS Computer Science (Affiliated with PU)</div>
+          </div>
+
+          <table class="w-full text-xs text-left border mb-4">
+            <thead class="bg-gray-100">
+              <tr>
+                <th class="p-2 border">Course Title</th>
+                <th class="p-2 border">Credit Hours</th>
+                <th class="p-2 border">Marks (100)</th>
+                <th class="p-2 border">Grade</th>
+                <th class="p-2 border">GP</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="p-2 border">Operating Systems</td><td class="p-2 border">3+1</td><td class="p-2 border">88</td><td class="p-2 border font-bold text-emerald-700">A+</td><td class="p-2 border">4.00</td></tr>
+              <tr><td class="p-2 border">Database Management Systems</td><td class="p-2 border">3+1</td><td class="p-2 border">82</td><td class="p-2 border font-bold text-emerald-700">A</td><td class="p-2 border">3.80</td></tr>
+              <tr><td class="p-2 border">Linear Algebra</td><td class="p-2 border">3</td><td class="p-2 border">78</td><td class="p-2 border font-bold text-blue-700">B+</td><td class="p-2 border">3.40</td></tr>
+              <tr><td class="p-2 border">Web Application Development</td><td class="p-2 border">3+1</td><td class="p-2 border">85</td><td class="p-2 border font-bold text-emerald-700">A+</td><td class="p-2 border">4.00</td></tr>
+            </tbody>
+          </table>
+
+          <div class="flex justify-between items-center pt-4 border-t text-[11px] text-gray-500">
+            <div>Official Result Issued by University of the Punjab / College Examination Branch</div>
+            <button onclick="window.print()" class="no-print px-4 py-1.5 bg-emerald-800 text-white rounded font-bold text-xs">
+              <i class="fas fa-print mr-1"></i> Print Transcript
+            </button>
+          </div>
+        </div>
+      `;
+      output.classList.remove('hidden');
+      showToast('Online Result Card retrieved!', 'success');
+    });
+  </script>
+</body>
+</html>

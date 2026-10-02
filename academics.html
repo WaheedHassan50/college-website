@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics & BS Programs | Govt. Graduate College Hafizabad</title>
+  <meta name="description" content="Explore BS (4-Year) Honors Degrees, Intermediate Programs, and Associate Degrees at Government Graduate College Hafizabad.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            clggreen: {
+              DEFAULT: '#0b4f30',
+              dark: '#073520',
+              deep: '#042114',
+              light: '#116840',
+              50: '#f0fdf4'
+            },
+            clggold: {
+              DEFAULT: '#c59b27',
+              light: '#e6b83b',
+              dark: '#997514',
+              50: '#fefce8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 transition-colors duration-300">
+
+  <!-- ================= TOP INFO BAR ================= -->
+  <div class="bg-clggreen-dark text-slate-200 text-xs py-1.5 px-4 hidden md:block border-b border-emerald-900/60">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <span class="flex items-center gap-1.5"><i class="fas fa-phone-alt text-clggold"></i> 0547-521400</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-envelope text-clggold"></i> info@ggchafizabad.edu.pk</span>
+        <span class="flex items-center gap-1.5"><i class="fas fa-map-marker-alt text-clggold"></i> Gujranwala Road, Hafizabad</span>
+      </div>
+      <div class="flex items-center gap-5">
+        <span class="text-emerald-300 font-semibold"><i class="fas fa-university mr-1"></i> Affiliated with PU Lahore & BISE Gujranwala</span>
+        <a href="student-portal.html" class="hover:text-clggold transition flex items-center gap-1"><i class="fas fa-user-lock"></i> Student & Staff Portal</a>
+        <button class="theme-toggle-btn text-clggold hover:text-white transition ml-2">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN HEADER ================= -->
+  <header class="header-glass sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <img src="assets/images/logo.svg" alt="Logo" class="w-14 h-14 group-hover:scale-105 transition">
+          <div>
+            <div class="text-xs uppercase font-extrabold tracking-widest text-clggreen dark:text-emerald-400">Govt. of the Punjab</div>
+            <h1 class="text-base sm:text-lg md:text-xl font-black text-slate-900 dark:text-white leading-tight">Govt. Graduate College Hafizabad</h1>
+            <p class="text-xs font-semibold text-slate-500 urdu-font">حکومتی گریجویٹ کالج حافظ آباد</p>
+          </div>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-6 text-sm">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About Us</a>
+          <a href="academics.html" class="nav-link active">Academics</a>
+          <a href="faculty.html" class="nav-link">Faculty</a>
+          <a href="admissions.html" class="nav-link">Admissions</a>
+          <a href="facilities.html" class="nav-link">Facilities</a>
+          <a href="notices.html" class="nav-link">Notices</a>
+          <a href="gallery.html" class="nav-link">Gallery</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="admissions.html" class="px-4 py-2 text-xs font-bold bg-clggreen hover:bg-clggreen-dark text-white rounded-lg shadow border border-clggold/40">
+            <i class="fas fa-paper-plane text-clggold mr-1"></i> Apply Online
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2 lg:hidden">
+          <button class="theme-toggle-btn p-2 text-slate-700 dark:text-slate-200"><i class="fas fa-moon"></i></button>
+          <button id="mobile-menu-toggle" class="p-2 text-slate-700 dark:text-slate-200"><i class="fas fa-bars text-2xl"></i></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= BANNER ================= -->
+  <div class="bg-gradient-to-r from-clggreen-deep via-clggreen to-clggreen-dark text-white py-14 px-4 text-center">
+    <span class="text-xs font-bold uppercase tracking-widest text-clggold-light bg-black/25 px-3 py-1 rounded-full border border-clggold/30">
+      Academic Programs & Faculties
+    </span>
+    <h1 class="text-3xl sm:text-5xl font-black mt-3 mb-2">Academics at GGC Hafizabad</h1>
+    <p class="text-slate-300 text-sm max-w-2xl mx-auto">
+      Comprehensive intermediate and undergraduate programs structured in accordance with HEC Pakistan guidelines and University of the Punjab curriculum.
+    </p>
+  </div>
+
+  <!-- ================= FILTERABLE PROGRAMS ================= -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-12">
+        <button class="tab-btn active" onclick="filterPrograms('all', this)">All Programs (14+)</button>
+        <button class="tab-btn" onclick="filterPrograms('bs', this)">BS (4-Year) Honors</button>
+        <button class="tab-btn" onclick="filterPrograms('intermediate', this)">Intermediate (HSSC)</button>
+        <button class="tab-btn" onclick="filterPrograms('adp', this)">Associate Degree (ADP)</button>
+      </div>
+
+      <!-- Container -->
+      <div id="programs-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Injected via JavaScript from data.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= SEMESTER GRADING SYSTEM ================= -->
+  <section class="py-16 bg-white dark:bg-slate-900 border-t dark:border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-clggreen dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/70 px-3 py-1 rounded-full">
+            PU Grading Framework
+          </span>
+          <h2 class="text-3xl font-black text-slate-900 dark:text-white mt-3 mb-4">
+            Semester Examination & Grading Rules
+          </h2>
+          <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed mb-6">
+            Our BS 4-Year degrees follow the rigorous Semester System mandated by the University of the Punjab and the Higher Education Commission (HEC). Each academic year is divided into Fall and Spring Semesters of 18 weeks each.
+          </p>
+
+          <div class="space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+            <div class="flex items-start gap-3 bg-slate-50 dark:bg-slate-800 p-3 rounded-xl border">
+              <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
+              <div>
+                <strong>Continuous Assessment (100 Marks per course):</strong><br>
+                Mid-Term Exam (35%), Final-Term Exam (40%), Sessional/Assignments/Quizzes (25%).
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-slate-50 dark:bg-slate-800 p-3 rounded-xl border">
+              <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
+              <div>
+                <strong>Minimum Passing Criteria:</strong><br>
+                A candidate must secure at least 50% marks in each theory & practical paper, and maintain a minimum CGPA of 2.00 to qualify for degree award.
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-slate-50 dark:bg-slate-800 p-3 rounded-xl border">
+              <i class="fas fa-check-circle text-emerald-600 mt-1"></i>
+              <div>
+                <strong>Mandatory 75% Attendance:</strong><br>
+                Students failing to maintain 75% lecture and practical attendance are barred from taking university terminal exams.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grading Table -->
+        <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl border shadow-sm">
+          <h4 class="font-bold text-base text-slate-900 dark:text-white mb-4">Letter Grade & GPA Equivalence</h4>
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left">
+              <thead class="bg-emerald-800 text-white">
+                <tr>
+                  <th class="p-2.5 rounded-l-lg">Percentage Marks</th>
+                  <th class="p-2.5">Letter Grade</th>
+                  <th class="p-2.5 rounded-r-lg">Grade Point (GP)</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y dark:divide-slate-700">
+                <tr><td class="p-2.5 font-bold">85% and above</td><td class="p-2.5 font-bold text-emerald-600">A+</td><td class="p-2.5">4.00</td></tr>
+                <tr><td class="p-2.5 font-bold">80% – 84%</td><td class="p-2.5 font-bold text-emerald-600">A</td><td class="p-2.5">3.70 – 3.90</td></tr>
+                <tr><td class="p-2.5 font-bold">75% – 79%</td><td class="p-2.5 font-bold text-blue-600">B+</td><td class="p-2.5">3.30 – 3.50</td></tr>
+                <tr><td class="p-2.5 font-bold">70% – 74%</td><td class="p-2.5 font-bold text-blue-600">B</td><td class="p-2.5">3.00</td></tr>
+                <tr><td class="p-2.5 font-bold">60% – 69%</td><td class="p-2.5 font-bold text-amber-600">C</td><td class="p-2.5">2.00 – 2.70</td></tr>
+                <tr><td class="p-2.5 font-bold">50% – 59%</td><td class="p-2.5 font-bold text-orange-600">D</td><td class="p-2.5">1.00 – 1.70</td></tr>
+                <tr><td class="p-2.5 font-bold text-red-600">Below 50%</td><td class="p-2.5 font-bold text-red-600">F (Fail)</td><td class="p-2.5">0.00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-8 border-t-4 border-clggold">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+      &copy; 2026 Government Graduate College Hafizabad. All Rights Reserved.
+    </div>
+  </footer>
+
+  <button id="back-to-top" class="back-to-top-btn"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function renderPrograms(list) {
+      const container = document.getElementById('programs-grid');
+      if (!container) return;
+
+      container.innerHTML = list.map(p => `
+        <div class="feature-card p-6 bg-white dark:bg-slate-900 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="badge-program">${p.level.toUpperCase()}</span>
+              <span class="text-xs font-bold text-slate-400">${p.seats} Seats</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-1.5">${p.title}</h3>
+            <p class="text-xs text-clggreen dark:text-clggold font-bold mb-2">Dept: ${p.department}</p>
+            <p class="text-xs text-slate-600 dark:text-slate-400 mb-4 leading-relaxed">${p.description}</p>
+            
+            <div class="bg-slate-50 dark:bg-slate-800 p-3 rounded-xl mb-4 text-xs space-y-1">
+              <div><strong>Affiliation:</strong> ${p.affiliation}</div>
+              <div><strong>Eligibility:</strong> ${p.eligibility}</div>
+              <div><strong>Duration:</strong> ${p.duration}</div>
+            </div>
+
+            <div class="space-y-1 text-xs text-slate-600 dark:text-slate-300 mb-6">
+              ${p.highlights.map(h => `<div><i class="fas fa-check text-emerald-500 mr-1.5"></i> ${h}</div>`).join('')}
+            </div>
+          </div>
+
+          <div class="pt-4 border-t dark:border-slate-800 flex items-center justify-between">
+            <a href="admissions.html" class="px-4 py-2 bg-clggreen hover:bg-clggreen-dark text-white font-bold text-xs rounded-lg shadow">
+              Apply For Admission
+            </a>
+            <button onclick="showToast('Syllabus booklet for ${p.title} will be downloaded.', 'info')" class="text-xs text-slate-500 hover:text-slate-800 dark:hover:text-white">
+              <i class="fas fa-download mr-1"></i> Syllabus
+            </button>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterPrograms(type, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      if (type === 'all') {
+        renderPrograms(COLLEGE_DATA.programs);
+      } else {
+        const filtered = COLLEGE_DATA.programs.filter(p => p.level === type);
+        renderPrograms(filtered);
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderPrograms(COLLEGE_DATA.programs);
+    });
+  </script>
+</body>
+</html>

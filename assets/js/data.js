@@ -11,7 +11,7 @@ const COLLEGE_DATA = {
       { name: "BISE Gujranwala", role: "Affiliated for Intermediate (F.Sc / ICS / FA)" },
       { name: "Higher Education Department (HED)", role: "Govt. of the Punjab" }
     ],
-    address: "College Road / Gujranwala Road, Hafizabad, Punjab, Pakistan",
+    address: "College Road / Madhrianwala Road, Hafizabad, Punjab, Pakistan",
     phone: "0547-521400 / 0547-522100",
     email: "info@ggchafizabad.edu.pk",
     officeHours: "Monday - Saturday: 08:00 AM - 02:00 PM (Friday till 12:30 PM)",
